@@ -25,22 +25,6 @@ namespace BoardApi.Controllers
         {
             if(messages != null)
                 Messages = messages;
-
-            var list = new List<Message>();
-
-            for (var i = 0; i < 10; i++)
-            {
-                var msg = new Message
-                {
-                    Id = i + 1,
-                    Text = "abc" + i.ToString(),
-                    UserId = i + 1,
-                    Date = DateTime.Now
-                };
-                list.Add(msg);
-            }
-
-            Messages = list;
         }
 
         // Get api/messages
