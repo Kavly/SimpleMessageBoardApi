@@ -66,7 +66,7 @@ namespace BoardApi.Controllers
         }
 
         // Put api/messages/id
-        [HttpPut("{postId}")]
+        [HttpPut("{id}")]
         public ActionResult<Message> Put(int id, Message message)
         {
             if (message == null || id <= 0)
